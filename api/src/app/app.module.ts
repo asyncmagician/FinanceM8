@@ -5,7 +5,7 @@ import { UserModule } from '../user/user.module';
 import { RefundModule } from '../refund/refund.module';
 import { ExpenseCategoryModule } from 'src/expense-category/expense-category.module';
 import { ExpenseModule } from '../expense/expense.module';
-// import { BalanceModule } from '../balance/balance.module';
+import { BalanceModule } from '../balance/balance.module';
 
 
 @Module({
@@ -15,6 +15,7 @@ import { ExpenseModule } from '../expense/expense.module';
     RefundModule,
     ExpenseCategoryModule,
     ExpenseModule,
+    BalanceModule
   ],
   controllers: [],
   providers: [],
