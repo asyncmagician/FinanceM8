@@ -35,6 +35,26 @@ npm run dev
 ```
 The API will be available at http://localhost:ENV_PORT.
 
+## Testing the API with Insomnia
+
+We've provided an exported Insomnia configuration file to help you get started with testing the API. The file is located in the `./docs` directory and is named `httpRequests.yaml`.
+
+To import the configuration file into Insomnia, follow these steps:
+
+1. If you haven't already, download and install Insomnia from the official website: https://insomnia.rest/download
+
+2. Open Insomnia and go to the "Dashboard" view.
+
+3. Click on the "Import/Export" button located in the top right corner of the Dashboard view.
+
+4. In the Import/Export modal, click on the "Import Data" button and select "From File."
+
+5. Navigate to the `docs` directory in your project and select the `insomnia.yaml` file.
+
+6. Click "Open" to import the configuration into Insomnia.
+
+Now you should have all the API endpoints pre-configured in Insomnia, and you can start testing the API by sending requests to the server.
+
 ## Contributing
 We welcome contributions from the community. Please ensure that your commits are signed for security and transparency reasons.
 

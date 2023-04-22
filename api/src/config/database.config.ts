@@ -11,7 +11,7 @@ const databaseConfig: TypeOrmModuleOptions = {
   username: process.env.dbUsername,
   password: process.env.dbPassword,
   database: process.env.dbName,
-  synchronize: true,
+  synchronize: false,
   entities: [join(__dirname, '**', '*.entity.{ts,js}')],
 };
 

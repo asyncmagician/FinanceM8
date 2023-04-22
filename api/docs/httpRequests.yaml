@@ -1,0 +1,729 @@
+_type: export
+__export_format: 4
+__export_date: 2023-04-22T16:46:17.163Z
+__export_source: insomnia.desktop.app:v2023.1.0
+resources:
+  - _id: req_93bc9f608c5b481e9a6dc0193cf29de8
+    parentId: fld_274e84d0377c4600b06dd24e26135944
+    modified: 1682181922401
+    created: 1682180135686
+    url: "{{baseUrl}}/users/"
+    name: Create user
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstName": "TBD",
+        	"lastName": "TBD",
+        	"email": "TBD",
+        	"password": "TBD"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392477
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_274e84d0377c4600b06dd24e26135944
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682180363304
+    created: 1682180363304
+    name: users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682180363304
+    _type: request_group
+  - _id: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    parentId: null
+    modified: 1682179941351
+    created: 1682179941351
+    name: API
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_a77424b4fc8d4ae48589ba24876f2522
+    parentId: fld_274e84d0377c4600b06dd24e26135944
+    modified: 1682180402176
+    created: 1682179984470
+    url: "{{baseUrl}}/users"
+    name: All users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392427
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_da2805d89658498d9a83a1e84c1454cc
+    parentId: fld_274e84d0377c4600b06dd24e26135944
+    modified: 1682181931188
+    created: 1682180233629
+    url: "{{baseUrl}}/users/1"
+    name: Update user
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstName": "TBD",
+        	"lastName": "TBD",
+        	"email": "TBD",
+        	"password": "TBD"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_23c7cb13e477446295e778d8cb0ce3f1
+    parentId: fld_274e84d0377c4600b06dd24e26135944
+    modified: 1682180411478
+    created: 1682180296027
+    url: "{{baseUrl}}/users/1"
+    name: Delete user
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392327
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ba00703b98a040c581c846bb78b5df60
+    parentId: fld_274e84d0377c4600b06dd24e26135944
+    modified: 1682180414133
+    created: 1682180095422
+    url: "{{baseUrl}}/users/1"
+    name: User by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392277
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d7abf9b2f0804ab99e9925342096b733
+    parentId: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    modified: 1682181876460
+    created: 1682180440327
+    url: "{{baseUrl}}/expenses"
+    name: Create expense
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"amount": 500,
+        	"description": "TBD",
+        	"status": true,
+        	"date": "01/01/2023"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392477
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682180440296
+    created: 1682180440296
+    name: expenses
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682180156705.5
+    _type: request_group
+  - _id: req_cc3da3443f1a4a6c9d962b2bd408c3d2
+    parentId: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    modified: 1682180840948
+    created: 1682180440301
+    url: "{{baseUrl}}/expenses"
+    name: All expenses
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392427
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b5c8afd00ecf4dbf92df82d4bef573d7
+    parentId: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    modified: 1682181883970
+    created: 1682180440348
+    url: "{{baseUrl}}/expenses/1"
+    name: Update expense
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"amount": 550,
+        	"description": "TBD",
+        	"status": true,
+        	"date": "01/01/2023"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_aeb40994839c46e2b89526cdaba4c091
+    parentId: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    modified: 1682180883752
+    created: 1682180440369
+    url: "{{baseUrl}}/expenses/1"
+    name: Delete expense
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392327
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6a4d9afcc6ab4929995de33574ce435e
+    parentId: fld_c2b8cef5e82f4505a3308d21df9bbe97
+    modified: 1682180889186
+    created: 1682180440306
+    url: "{{baseUrl}}/expenses/1"
+    name: Expense by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392277
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_66e77df9c464475390ab2fa499f62935
+    parentId: fld_7a57187adb264676872ffccd34dc7574
+    modified: 1682181890403
+    created: 1682180899048
+    url: "{{baseUrl}}/categories"
+    name: Create category
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "TBD",
+        	"type": "TBD"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392477
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7a57187adb264676872ffccd34dc7574
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682180898984
+    created: 1682180898984
+    name: categories
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682180053406.25
+    _type: request_group
+  - _id: req_4d471b396f634d24a82ca21b6d8095db
+    parentId: fld_7a57187adb264676872ffccd34dc7574
+    modified: 1682180961770
+    created: 1682180898990
+    url: "{{baseUrl}}/categories"
+    name: All categories
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392427
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b40554d484564b3aba53adcb015c8a5a
+    parentId: fld_7a57187adb264676872ffccd34dc7574
+    modified: 1682181893945
+    created: 1682180899077
+    url: "{{baseUrl}}/categories/1"
+    name: Update category
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "TBD",
+        	"type": "TBD"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5d9cf40fd47147589c2cbcda4db95e18
+    parentId: fld_7a57187adb264676872ffccd34dc7574
+    modified: 1682181011779
+    created: 1682180899106
+    url: "{{baseUrl}}/categories/1"
+    name: Delete category
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392327
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_13d5471b147e43a4abe72c4468e9e1b1
+    parentId: fld_7a57187adb264676872ffccd34dc7574
+    modified: 1682181008014
+    created: 1682180899019
+    url: "{{baseUrl}}/categories/1"
+    name: Category by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392277
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4ac1a391e9a943518374af4a2eb36c4f
+    parentId: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    modified: 1682181412758
+    created: 1682181029420
+    url: "{{baseUrl}}/balances/"
+    name: Create balance
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"lastUpdated": "2021-01-19 03:14:07",
+        	"current": 1000,
+        	"saving": 150
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392477
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682181082409
+    created: 1682181029364
+    name: balances
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682180001756.625
+    _type: request_group
+  - _id: req_1132247a9fde44a9b9f22c7f21c55b1c
+    parentId: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    modified: 1682181441559
+    created: 1682181029370
+    url: "{{baseUrl}}/balances"
+    name: All balances
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392427
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c506d501a49c4144b9efa70d6c018378
+    parentId: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    modified: 1682181435961
+    created: 1682181029445
+    url: "{{baseUrl}}/balances/1"
+    name: Update balance
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"lastUpdated": "2023-01-19 03:14:07",
+        	"current": 1000,
+        	"saving": 150
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c901b69bfc774d4abf3bc80be629906f
+    parentId: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    modified: 1682181448069
+    created: 1682181029469
+    url: "{{baseUrl}}/balances/1"
+    name: Delete balance
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392327
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_57a7b7317432460a967ef6b49a10a68b
+    parentId: fld_bdbf5faa69ef4a1b9c38a37b586a4c4f
+    modified: 1682181452744
+    created: 1682181029394
+    url: "{{baseUrl}}/balances/1"
+    name: Balance by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392277
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7b612f92f8b64f1c904eaf424be9b17a
+    parentId: fld_0c3435d51e8742d29a1a530a4f355533
+    modified: 1682181904161
+    created: 1682181036027
+    url: "{{baseUrl}}/refunds"
+    name: Create refund
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"amount": 16.50,
+        	"description": "TBD",
+        	"date": "2021-01-19 03:14:07"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392477
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0c3435d51e8742d29a1a530a4f355533
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682181087288
+    created: 1682181035967
+    name: refunds
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682179975931.8125
+    _type: request_group
+  - _id: req_869297a8df5941ff9deebbab000b7190
+    parentId: fld_0c3435d51e8742d29a1a530a4f355533
+    modified: 1682181537537
+    created: 1682181035977
+    url: "{{baseUrl}}/refunds"
+    name: All refunds
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392427
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f560fc75cd934ed7b9ff18e96c186bf5
+    parentId: fld_0c3435d51e8742d29a1a530a4f355533
+    modified: 1682181908669
+    created: 1682181036053
+    url: "{{baseUrl}}/refunds/2"
+    name: Update refund
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"amount": 5,
+        	"description": "TBD",
+        	"date": "2021-01-19 03:14:07"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392377
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ae29e9b8a5bb46feb965adf25a7ed25f
+    parentId: fld_0c3435d51e8742d29a1a530a4f355533
+    modified: 1682181571206
+    created: 1682181036077
+    url: "{{baseUrl}}/refunds/2"
+    name: Delete refund
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1682180392327
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bc2db7c628ed407d88384363f851a304
+    parentId: fld_0c3435d51e8742d29a1a530a4f355533
+    modified: 1682181575905
+    created: 1682181036002
+    url: "{{baseUrl}}/refunds/1"
+    name: Refund by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1682180392277
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_4b6824a48de91668a2463cb1754761b417037b9a
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682180064561
+    created: 1682179941370
+    name: Base Environment
+    data:
+      baseUrl: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1682179941370
+    _type: environment
+  - _id: jar_4b6824a48de91668a2463cb1754761b417037b9a
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682179941375
+    created: 1682179941375
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_a0e12f4c26ff49c694367baab8ad46b3
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682179941352
+    created: 1682179941352
+    fileName: API
+    contents: ""
+    contentType: yaml
+    _type: api_spec
