@@ -3,9 +3,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeOrmConfig } from '../config/typeorm.config';
 import { UserModule } from '../user/user.module';
 import { RefundModule } from '../refund/refund.module';
+import { ExpenseCategoryModule } from 'src/expense-category/expense-category.module';
 // import { BalanceModule } from '../balance/balance.module';
 // import { ExpenseModule } from '../expense/expense.module';
-// import { ExpenseCategoryModule } from '../expense-category/expense-category.module';
 
 
 @Module({
@@ -13,6 +13,7 @@ import { RefundModule } from '../refund/refund.module';
     TypeOrmModule.forRoot(typeOrmConfig),
     UserModule,
     RefundModule,
+    ExpenseCategoryModule
   ],
   controllers: [],
   providers: [],
