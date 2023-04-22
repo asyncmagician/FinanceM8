@@ -1,73 +1,47 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# FinanceMate API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+FinanceMate API is an open-source RESTful API built with Nest.js. It's designed to work seamlessly with the FinanceMate, a Vue.js application available in the `app/` directory of this repository. FinanceMate aims to provide an efficient and user-friendly way to manage personal finances and expenses.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Getting Started
+Follow these instructions to set up the FinanceMate API on your local machine for development and testing purposes.
 
-## Description
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- MySQL (v5.7 or higher)
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Installation
 
-## Installation
-
-```bash
-$ npm install
+1. Clone the repository:
+```
+git clone https://github.com/csswasthebestcs/FinanceM8.git
 ```
 
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+2. Navigate to the api/ directory
+```
+cd FinanceM8/api
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+3. Install the dependencies
+```
+npm install
 ```
 
-## Support
+4. Set up your `.env` file with your database credentials and other necessary environment variables. (Use the `.env.example` as a template)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+5. Run the development server
+```
+npm run dev
+```
+The API will be available at http://localhost:ENV_PORT.
 
-## Stay in touch
+## Contributing
+We welcome contributions from the community. Please ensure that your commits are signed for security and transparency reasons.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## Built With
+- [Nest.js](https://nestjs.com/)- A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+- [TypeORM](https://typeorm.io/) - An ORM that can run in Node.js and supports both Active Record and Data Mapper patterns.
+- [FactoryGirl](https://github.com/simonexmachina/factory-girl/tree/f7ec9d5004021ff1334ab9440e9b5cc4fd1a18b0):  A factory library for node.js, it works asynchronously and supports associations and the use of functions for generating attributes.
 
 ## License
-
-Nest is [MIT licensed](LICENSE).
+This project is 100% open-source under the `MIT Licence`.
