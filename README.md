@@ -1,13 +1,13 @@
 # FinanceMate
 
-FinanceMate is a 100% open-source web application that is free to use for anyone who wants to take control of their finances. The application is designed to help users track their expenses and manage their budget in a simple and intuitive way. It is built with Vue.js for the frontend and Nest.js for the backend API, and it is made available to the public under the MIT license. This means that anyone can use it for any purpose, including personal or commercial use, without any bullshit or hidden fees.
+FinanceMate is a 100% open-source web application that is free to use for anyone who wants to take control of their finances. The application is designed to help users track their expenses and manage their budget in a simple and intuitive way. It is built with Astro.js for the frontend and Nest.js for the backend API, and it is made available to the public under the MIT license. This means that anyone can use it for any purpose, including personal or commercial use, without any bullshit or hidden fees.
 
 However, it's important to note that FinanceMate may contain sensitive data, such as personal financial information, which requires extra care to secure the application if it's going to be deployed on a server. We highly recommend that you take appropriate measures to secure your deployment, such as using HTTPS, implementing user authentication and authorization, and properly configuring your server firewall. It's your responsibility to ensure that your FinanceMate deployment is secure and your data is protected.
 
 ## Folder Structure
 The repository contains two main folders
 
-- `app`: This contains the frontend application, which is built using the Vue.js framework. The app interacts with the backend API to fetch, display, and manage data.
+- `app`: This contains the frontend application, which is built using the Astro.js framework. The app interacts with the backend API to fetch, display, and manage data.
 - `api`: This holds the backend application, developed using the Nest.js framework. It offers RESTful endpoints that the frontend communicates with to access and persist data in a database.
 
 ## Why FinanceMate?
