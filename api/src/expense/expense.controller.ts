@@ -2,7 +2,7 @@ import { Controller, Get, Post, Put, Delete, Param, Body } from '@nestjs/common'
 import { ExpenseService } from './expense.service';
 import { Expense } from './expense.entity';
 
-@Controller('refunds')
+@Controller('expenses')
 export class ExpenseController {
   constructor(private expenseService: ExpenseService) {}
 
