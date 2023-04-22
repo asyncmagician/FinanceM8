@@ -39,9 +39,9 @@ The API will be available at http://localhost:ENV_PORT.
 
 We've provided an exported Insomnia configuration file to help you get started with testing the API. The file is located in the `./docs` directory and is named `httpRequests.yaml`.
 
-To import the configuration file into Insomnia, follow these steps:
+To import the configuration file into Insomnia which is open-source project, follow these steps:
 
-1. If you haven't already, download and install Insomnia from the official website: https://insomnia.rest/download
+1. If you haven't already, clone [their repository](https://github.com/Kong/insomnia)
 
 2. Open Insomnia and go to the "Dashboard" view.
 
