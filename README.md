@@ -7,12 +7,8 @@ However, it's important to note that FinanceMate may contain sensitive data, suc
 ## Folder Structure
 The repository contains two main folders
 
-- app *Vue.js, the frontend of the application*
-- api *Nest.js, the backend of the application*
-
-The frontend is built using the Vue.js framework and communicates with the backend API to retrieve and display data.
-
-The backend API provides REST endpoints for the frontend to communicate with and is responsible for retrieving and persisting data to a database.
+- `app`: This contains the frontend application, which is built using the Vue.js framework. The app interacts with the backend API to fetch, display, and manage data.
+- `api`: This holds the backend application, developed using the Nest.js framework. It offers RESTful endpoints that the frontend communicates with to access and persist data in a database.
 
 ## Why FinanceMate?
 Sometimes, it's hard to keep track of our expenses and manage our budget. With FinanceMate, you can easily track their expenses and have a better understanding of where your money is going. This can help you to make informed decisions about their spending habits and ultimately lead to better financial outcomes.
