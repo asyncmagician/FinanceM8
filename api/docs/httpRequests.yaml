@@ -1,11 +1,11 @@
 _type: export
 __export_format: 4
-__export_date: 2023-04-22T16:46:17.163Z
+__export_date: 2023-04-23T11:53:00.005Z
 __export_source: insomnia.desktop.app:v2023.1.0
 resources:
   - _id: req_93bc9f608c5b481e9a6dc0193cf29de8
     parentId: fld_274e84d0377c4600b06dd24e26135944
-    modified: 1682181922401
+    modified: 1682250735655
     created: 1682180135686
     url: "{{baseUrl}}/users/"
     name: Create user
@@ -15,10 +15,10 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"firstName": "TBD",
-        	"lastName": "TBD",
-        	"email": "TBD",
-        	"password": "TBD"
+        	"firstName": "John",
+        	"lastName": "Doe",
+        	"email": "john@doe.com",
+        	"password": "This is a password not secured yet"
         }
     parameters: []
     headers:
@@ -54,16 +54,22 @@ resources:
     _type: workspace
   - _id: req_a77424b4fc8d4ae48589ba24876f2522
     parentId: fld_274e84d0377c4600b06dd24e26135944
-    modified: 1682180402176
+    modified: 1682248646996
     created: 1682179984470
-    url: "{{baseUrl}}/users"
+    url: "{{baseUrl}}/users/"
     name: All users
     description: ""
     method: GET
     body: {}
     parameters: []
-    headers: []
-    authentication: {}
+    headers:
+      - id: pair_b3ffcfef8a71401ba7dbcca554f1c803
+        name: Bearer
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoibWF5QG1heS5mciIsImlhdCI6MTY4MjI0ODI3M30.kD2GCLnCuG4yuMpFRbDupCeF1f8wXGgrwWdirZfDxsI
+        description: ""
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoibWF5QG1heS5mciIsImlhdCI6MTY4MjI0ODI3M30.kD2GCLnCuG4yuMpFRbDupCeF1f8wXGgrwWdirZfDxsI
     metaSortKey: -1682180392427
     isPrivate: false
     settingStoreCookies: true
@@ -75,7 +81,7 @@ resources:
     _type: request
   - _id: req_da2805d89658498d9a83a1e84c1454cc
     parentId: fld_274e84d0377c4600b06dd24e26135944
-    modified: 1682181931188
+    modified: 1682250743304
     created: 1682180233629
     url: "{{baseUrl}}/users/1"
     name: Update user
@@ -85,10 +91,10 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"firstName": "TBD",
-        	"lastName": "TBD",
-        	"email": "TBD",
-        	"password": "TBD"
+        	"firstName": "Jane",
+        	"lastName": "Doe",
+        	"email": "john@doe.com",
+        	"password": "This is a password not secured yet"
         }
     parameters: []
     headers:
@@ -131,16 +137,18 @@ resources:
     _type: request
   - _id: req_ba00703b98a040c581c846bb78b5df60
     parentId: fld_274e84d0377c4600b06dd24e26135944
-    modified: 1682180414133
+    modified: 1682250537842
     created: 1682180095422
-    url: "{{baseUrl}}/users/1"
+    url: "{{baseUrl}}/users/2"
     name: User by id
     description: ""
     method: GET
     body: {}
     parameters: []
     headers: []
-    authentication: {}
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoibWF5QG1heS5mciIsImlhdCI6MTY4MjI0ODI3M30.kD2GCLnCuG4yuMpFRbDupCeF1f8wXGgrwWdirZfDxsI
     metaSortKey: -1682180392277
     isPrivate: false
     settingStoreCookies: true
@@ -698,6 +706,46 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
+  - _id: req_66909f50e514479e98379eaf3b707067
+    parentId: fld_b753e8caad0a43beac6c658e2424c663
+    modified: 1682250762672
+    created: 1682246072843
+    url: "{{baseUrl}}/auth/login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "john@doe.com",
+        	"password": "This is a password not secured yet"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+    metaSortKey: -1682246072843
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b753e8caad0a43beac6c658e2424c663
+    parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
+    modified: 1682179956587
+    created: 1682179950107
+    name: authentication
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1682179950107
+    _type: request_group
   - _id: env_4b6824a48de91668a2463cb1754761b417037b9a
     parentId: wrk_2b7d7313810249859bfd0b5f8f89de0a
     modified: 1682180064561
