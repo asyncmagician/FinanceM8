@@ -2,6 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, OneToMany, JoinColumn, OneToOne
 import { Expense } from '../expense/expense.entity';
 import { Balance } from '../balance/balance.entity';
 import { Refund } from '../refund/refund.entity';
+import * as argon2 from 'argon2';
 
 @Entity()
 export class User {
@@ -19,6 +20,10 @@ export class User {
 
   @Column()
   password: string;
+
+  async setPassword(password: string): Promise<void> {
+    this.password = await argon2.hash(password);
+  }
 
   @OneToMany(() => Expense, (expense) => expense.user)
   expenses: Expense[];
