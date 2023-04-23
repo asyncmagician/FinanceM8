@@ -22,7 +22,7 @@ We welcome contributions from the community. Please ensure that your commits are
 
 ## Built With
 - [Astro.js](https://astro.build/) - A modern static site builder that gives you the best parts of modern web development without any of the annoying parts.
-[React](https://react.dev/) - A popular JavaScript library for building user interfaces.
+- [React](https://react.dev/) - A popular JavaScript library for building user interfaces.
 
 ## License
 This project is 100% open-source under the MIT Licence.
