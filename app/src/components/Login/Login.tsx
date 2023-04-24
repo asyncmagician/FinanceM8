@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import styles from './Login.module.css'; 
 
 export const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -10,23 +9,46 @@ export const Login: React.FC = () => {
   };
 
   return (
-    <div className={styles['container']}>
-      <section className={styles['box']}>
-        <h1>FinanceMate</h1>
-        <form className={styles['form']} onSubmit={handleSubmit}>
-          <div className={styles['form-input']}>
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-md w-full space-y-8 p-8 bg-white shadow rounded-lg">
+        <h1 className="text-4xl font-bold text-center mb-8">FinanceMate</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-base text-gray-900"
+            />
           </div>
-          <div className={styles['form-input']}>
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <div className="mb-4">
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-base text-gray-900"
+            />
           </div>
-          <div className={styles['submit-container']}>
-            <button type="submit" className={styles['submit-btn']}>Login</button>
+          <div className="text-center">
+            <button
+              type="submit"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+            >
+              Login
+            </button>
           </div>
         </form>
-      </section>
+      </div>
     </div>
   );
 };
