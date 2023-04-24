@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from '../Button/Button';
 
 export const Login: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -40,12 +41,12 @@ export const Login: React.FC = () => {
             />
           </div>
           <div className="text-center">
-            <button
-              type="submit"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
-            >
-              Login
-            </button>
+          <Button
+            type="submit"
+            colorClasses="bg-pink-600 hover:bg-pink-700 focus:ring-pink-500 text-white"
+          >
+            Login
+          </Button>
           </div>
         </form>
       </div>
