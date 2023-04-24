@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Button } from '../Button/Button';
-import { useNavigate } from 'react-router-dom';
 
-export const Login: React.FC = () => {
+export interface LoginProps {
+  apiUrl: string
+}
+
+export const Login: React.FC<LoginProps> = ({ apiUrl }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
 
-  const baseUrl =  process.env.API_URL;
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    const baseUrl = apiUrl;
 
     try {
       const response = await fetch(`${baseUrl}/auth/login`, {
@@ -21,7 +24,7 @@ export const Login: React.FC = () => {
       });
 
       if (response.ok) {
-        navigate('/');
+        window.location.href = '/';
       } else {
         console.error('Login failed');
       }
@@ -29,7 +32,7 @@ export const Login: React.FC = () => {
       console.error('Network error:', error);
     }
   };
-  
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 p-8 bg-white shadow rounded-lg">
