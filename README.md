@@ -4,14 +4,25 @@ FinanceMate is a 100% open-source web application that is free to use for anyone
 
 However, it's important to note that FinanceMate **will probably contain sensitive data, such as personal financial information, which requires extra care to secure the application if it's going to be deployed on a server.** We highly recommend that you take appropriate measures to secure your deployment, such as *using HTTPS, implementing user authentication and authorization, and properly configuring your server firewall.* It's your responsibility to ensure that your FinanceMate deployment is secure and your data is protected. ⚠️
 
+## Why FinanceMate?
+Sometimes, it's hard to keep track of our expenses and manage our budget. With FinanceMate, you can easily track their expenses and have a better understanding of where your money is going. This can help you to make informed decisions about their spending habits and ultimately lead to better financial outcomes.
+
+## Status
+
+**Please note that this project is currently under active development and is not yet ready for use. ⚠️**
+
+At this stage, we cannot consider the project to be in an alpha state, as it lacks crucial features and functionalities, especially regardind the RESTful API. Security measures have not been fully implemented, which further limits the project's usability.
+
+Additionally, the graphical user interface is still in its early stages, with many pages yet to be created and refined.
+
+I appreciate your interest in the project and kindly ask for your patience as I am working diligently to improve it. Please stay tuned for updates, and I am looking forward to share a more complete and functional version of the project in the future.
+
 ## Folder Structure
 The repository contains two main folders
 
 - `app`: This contains the frontend application, which is built using the Astro.js framework. The app interacts with the backend API to fetch, display, and manage data.
 - `api`: This holds the backend application, developed using the Nest.js framework. It offers RESTful endpoints that the frontend communicates with to access and persist data in a database.
 
-## Why FinanceMate?
-Sometimes, it's hard to keep track of our expenses and manage our budget. With FinanceMate, you can easily track their expenses and have a better understanding of where your money is going. This can help you to make informed decisions about their spending habits and ultimately lead to better financial outcomes.
 
 ## Getting Started
 To get started with FinanceMate, follow these steps:
