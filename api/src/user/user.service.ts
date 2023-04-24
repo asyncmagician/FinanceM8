@@ -36,9 +36,14 @@ async create(createUserDto: CreateUserDto): Promise<User> {
 }
 
 
-  async update(id: number, user: User): Promise<void> {
-    await this.userRepository.update(id, user);
+  async update(id: number, updatedUser: User): Promise<void> {
+    if (updatedUser.password) {
+      updatedUser.password = await argon2.hash(updatedUser.password);
+    }
+    await this.userRepository.update(id, updatedUser);
   }
+
+
 
   async delete(id: number): Promise<void> {
     await this.userRepository.delete(id);

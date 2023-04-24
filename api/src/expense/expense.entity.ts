@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from 'typeorm';
 import { User } from '../user/user.entity';
 import { Refund } from '../refund/refund.entity';
-import { ExpenseCategory } from '../expense-category/expense-category.entity';
+import { ExpenseCategory } from '../expenseCategory/expenseCategory.entity';
 
 @Entity()
 export class Expense {
