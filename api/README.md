@@ -1,6 +1,6 @@
 # FinanceMate API
 
-FinanceMate API is an open-source RESTful API built with Nest.js. It's designed to work seamlessly with the FinanceMate, an Astro.js application available in the `app/` directory of this repository. FinanceMate aims to provide an efficient and user-friendly way to manage personal finances and expenses.
+FinanceMate API is an open-source RESTful API built with Nest.js. It's designed to work seamlessly with the FinanceMate, a Nuxt 3 web application available in the `app/` directory of this repository. FinanceMate aims to provide an efficient and user-friendly way to manage personal finances and expenses.
 
 ## Getting Started
 Follow these instructions to set up the FinanceMate API on your local machine for development and testing purposes.
